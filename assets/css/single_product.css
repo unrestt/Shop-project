@@ -1,0 +1,245 @@
+.single_product{
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+.product-left{
+    margin-left: 200px;
+}
+.product-right{
+    margin-right: 50px;
+}
+
+
+.product-left, .product-right{
+    width: 50%;
+}
+
+.single_product .image-big img{
+    width: 70%;
+    min-width: 450px;
+}
+.single_product .images-small img{
+    margin-top: 20px;
+    width: 18%;
+    min-width: 100px;
+}
+.images-small{
+    gap: 20px;
+}
+.images-small, .image-big{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-top-text p{
+    font-size: 25px;
+} 
+.product-colors{
+    width: 50%;
+}
+.product-colors img{
+    width: 20%;
+    min-width: 80px;
+}
+hr{
+    width: 50%;
+}
+.sizes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: calc(90px * 4 + 10px * 3);
+}
+.single-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.single-size:hover{
+    background-color: #292828;
+    color: #fff;
+}
+.single_product i{
+    color: #000;
+
+}
+.single_product i:hover{
+    color: #000;
+
+}
+.table-size{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.table-size p{
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    gap: 20px;
+}
+.modal-content img{
+    width: auto;
+}
+
+.close-button {
+    position: absolute; /* Umożliwia umiejscowienie przycisku w prawym górnym rogu */
+    top: 10px; /* Odstęp od góry */
+    right: 10px; /* Odstęp od prawej */
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.product-add-cart-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-add-cart-flex button{
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+.product-add-cart-flex .big-button:hover{
+ background-color: #292828;
+}
+.product-add-cart-flex button:hover{
+    background-color: #ccc;
+}
+.product-add-cart-flex .big-button{
+    height: 50px;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+}
+.product-infomations i, .product-infomations p{
+    font-size: 20px;
+}
+.single-size {
+    cursor: pointer;
+}
+
+.single-size.selected {
+    border: 2px solid #000;
+}
+.images-small img {
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.small-image:hover {
+    border: 1px solid #ccc;
+}
+.show-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.show-box-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 50px;
+}
+.show-box-content-text{
+    min-width: 200px;
+}
+.show-box-content button{
+    border: none;
+    background-color: #F0F0F0;
+    height: 50px;
+    padding: 10px;
+}
+.show-box-content button:hover{
+    background-color: #ccc;
+    transition: 0.4s;
+}
+.show-box-content-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+
+@media (max-width: 1208px) {
+
+    .modal-content{
+        margin: 50px;
+
+    }
+    .modal{
+        width: 100%;
+    }
+    .modal img{
+        width: 100%;
+    }
+    .single_product {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .product-left{
+        max-width: 800px;
+    }
+    .product-right{
+        padding: 30px;
+    }
+    .product-colors img{
+        min-width: 90px;
+    }
+  
+    .product-left,
+    .product-right {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .product-right {
+      margin-top: 20px;
+    }
+  
+  }
+  
+
+
